@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <title> About Us </title>
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #006080;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #006080;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #006080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.column {
+  float: left;
+  width: 30.99%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn"> Teaching Services 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="service1.html">English</a>
+      <a href="service2.html">Spanish</a>
+      <a href="service3.html">French</a>
+      <a href="service4.html">Mandarin Chinese</a>
+    </div>
+  </div> 
+  <a href="product1.html">Books</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <p align= "center" > <img src= "image/about.png" " alt= "About Us Banner" style="height:300px; width:100%;" > 
+</div>
+
+<div class="row">
+  <div class="column">
+  <h1>Our Story</h1> 
+   <p> Our in-person tutoring services were replaced by online classes as cases of Covid-19 increased in 2020. This transformation in our teaching environment presented a number of difficulties, but it also made it possible for people from beyond the region to attend our lessons and use our resources. In 2023, we have more than 200 students learning with us, the majority of which are from Latin America, the West Indies, and the USA.  </p> 
+  </div>
+
+  <div class="column">
+    <h1>What we offer</h1> 
+    <p> Passports to the World is an online lecturing platform dedicated to individuals of all demographic backgrounds who would like to enhance their language vocabulary in English, Spanish, French, and Mandarin Chinese.</p>
+  </div>
+</div>
+
+<h1> Tutors </h1>
+ <div class="row">
+  <div class="column">
+   <img src="image/teacher1.jpg" alt="Ms.Adaline Cooper" style="width: 250px; height:210px;"> 
+    <p> Ms.Adaline Cooper- English <p>
+    </div>
+  <div class="column">
+<img src="image/teacher2.jpg" alt="Mrs.Alice Parker" style="width: 250px; height:210px;"> 
+    <p>Mrs.Alice Parker- Mandarin Chinese<p>
+    </div>
+  <div class="column">
+<img src="image/teacher3.jpg" alt="Ms.Jannet James" style="width: 250px; height:210px;"> 
+    <p>Ms.Jannet James-Spanish <p>
+    </div>
+</div>
+
+ <div class="row">
+  <div class="column">
+   <img src="image/teacher4.jpg" alt="Mr.Jayson Leward " style="width: 250px; height:210px;"> 
+    <p> Mr.Jayson Leward-French <p>
+  </div>
+<div class="column">
+<img src="image/teacher5.jpg" alt=" Mr.Lewis Benjamin" style="width: 250px; height:210px;"> 
+    <p> Mr.Lewis Benjamin-English <p>
+   </div>
+<div class="column">
+<img src="image/teacher6.jpg" alt="Ms.Ariana Laloo" style="width: 250px; height:210px;"> 
+    <p> Ms.Ariana Laloo- Spanish & French<p>
+  </div> 
+</div>
+
+</body>
+</html>
